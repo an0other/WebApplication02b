@@ -1,0 +1,92 @@
+/* Tổng thể trang */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 40px;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Khối form */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tất cả các dòng input & select */
+form input[type="text"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s, background 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #4285f4;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Checkbox & radio */
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+/* Textarea */
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Các nút */
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"] {
+    padding: 10px 20px;
+    margin: 10px 10px 0 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form input[type="button"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* ComboBox & Listbox */
+form select[multiple],
+form select[size] {
+    height: auto;
+    min-height: 100px;
+    background-color: #f1f1f1;
+}
